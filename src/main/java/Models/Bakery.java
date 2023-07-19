@@ -10,14 +10,14 @@ public class Bakery {
     protected double till;
     protected ArrayList<ISell> bakeryStock;
 
-    public Bakery (String name, double till, ArrayList<ISell bakeryStock>){
+    public Bakery (String name, double till, ArrayList<ISell> bakeryStock){
         this.name = name;
         this.till = till;
         this.bakeryStock = bakeryStock;
 
         }
 
-    protected ArrayList<Confectionary> confectionarys;
+    public ArrayList<Confectionary> confectionarys;
 
 //    protected Bakery() { this.confectionarys + this.bubbleTeas = new ArrayList<>();}
 //
@@ -27,12 +27,16 @@ public class Bakery {
     public void addConfectionarys(Confectionary confectionary) { this.confectionarys.add(confectionary); }
 
 
-    protected ArrayList<BubbleTea> bubbleTeas;
-    protected Bakery() { this.bubbleTeas = new ArrayList<>();}
+    public ArrayList<BubbleTea> bubbleTeas;
+    public Bakery() { this.bubbleTeas = new ArrayList<>();}
 
 
     public void calculateProfit(){
 
 
+    }
+
+    public ArrayList<Confectionary> countConfectionarys() {
+        return this.confectionarys;
     }
 }

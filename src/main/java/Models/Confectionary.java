@@ -12,13 +12,13 @@ public abstract class Confectionary implements ISell {
     protected String ingredients;
 
 
-    public Confectionary (String type){
+    public Confectionary (String type, String dietaryRequirement, double cost, double sellPrice, int quantity, String ingredients){
         this.type = type;
-        this.dietaryRequirement = dietaryRequirement;
+        this.dietaryRequirement = this.dietaryRequirement;
         this.cost = 0.00;
         this.sellPrice = 0.00;
         this.quantity = 0;
-        this.ingredients =  ingredients;
+        this.ingredients = this.ingredients;
 
     }
 
